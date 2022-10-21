@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: black; margin:0px">
-    <h2 style="color: white; margin:30px">I am working on in ...❤️‍🔥</h2>
+    <h3 style="color: white; margin-top:160px; text-align: center;">I am working on in ...❤️‍🔥</h3>
     <div id="container" width="100vw" height="100vh" />
         
    
@@ -366,8 +366,8 @@ function init() {
 
   // SPHERE
   const RADIUS = 70;
-  const SEGMENTS = 100;
-  const RINGS = 100;
+  const SEGMENTS = 50;
+  const RINGS = 50;
 
   const globe = new THREE.Group();
   scene.add(globe);
@@ -405,7 +405,7 @@ function init() {
    // OBJECT CONTROLS
   var controls = new THREE.ObjectControls(camera, renderer.domElement, globe);
             controls.setDistance(50, 500); // set min - max distance for zoom
-            controls.setZoomSpeed(10); // set zoom speed
+            controls.setZoomSpeed(30); // set zoom speed
             controls.enableVerticalRotation();
             controls.setMaxVerticalRotationAngle(Math.PI / 4, Math.PI / 4);
             controls.setRotationSpeed(0.05);
