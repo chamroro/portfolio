@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="margin:0px">
+<body style="background-color: black; margin:0px">
+    <h2 style="color: white; margin:30px">I am working on in ...❤️‍🔥</h2>
+    <div id="container" width="100vw" height="100vh" />
+        
    
-    <div  id="container" width="100vw" height="100vh" />
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js"></script>
@@ -350,7 +352,7 @@ function init() {
   camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR);
 
   // Step 3. Set the camera's position
-  camera.position.set(0, 0, 100);
+  camera.position.set(0, -100, 100);
 
   // Step 4. Create the scene
    scene = new THREE.Scene();
